@@ -41,7 +41,7 @@ export function NewNoteCard({ onNoteCreated }: NewNoteCardProps) {
     toast.success('Nota criada com sucesso!')
   }
 
-  function handleStartRecording(event: FormEvent) {
+  function handleStartRecording() {
     const isSpeechRecognitionAPIAvailable = 'SpeechRecognition' in window || 'webkitSpeechRecognition' in window
 
     if (!isSpeechRecognitionAPIAvailable) {
